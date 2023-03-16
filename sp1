@@ -1,0 +1,54 @@
+
+
+public class Calculator {
+  public void main(String[] args) {
+
+    //her definerer jeg char til at være option, hvilket består af plus eller minus af x og y
+    //x og y vælger jeg at navngive første og det sekundære tal i regnestykket
+    char option;
+     
+    
+    Scanner input = new Scanner(System.in);
+
+   // bruger indskriver et tilfældigt nummer i x
+    println("Enter x");
+    
+    int x = in.nextInt();
+    
+   
+      //her indskriver brugeren et andet tilfældigt nummer i y
+    println("Enter y");
+    int y = in.nextInt();
+
+   
+ switch () {
+      
+       // bruger skal vælge en option, altså minus eller plus
+    println("Choose an option: -, +");
+    
+    option = in.nextInt().charAt(0);
+      
+     //følgende numre printes ud i plus minus samt result 
+     
+      case '+':
+        result = x + y;
+        
+        println(x + " + " + x + " = " + result);
+        break;
+        
+      case '-':
+        result = x - y;
+        
+        println(x + " - " + y + " = " + result);
+        break;
+
+     
+
+      default:
+        println("Invalid option!");
+        break;
+    }
+
+    input.close();
+  }
+}
